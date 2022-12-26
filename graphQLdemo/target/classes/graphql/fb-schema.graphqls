@@ -1,0 +1,27 @@
+
+
+
+type User {
+  id: ID
+  name: String
+  mobile: String
+  address: Address
+  friends: [User]
+  likes: [Group]
+}
+
+
+type Address {
+  id: ID
+  primary: String
+  secondary: String
+}
+
+type Group{
+  id: ID
+  name: String
+  description: String
+  type: String
+  member:[User]
+  owner: User
+}
